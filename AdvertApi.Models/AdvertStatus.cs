@@ -1,5 +1,5 @@
 ﻿
-namespace AdvertApi.Models
+namespace NewAdvertApi.Models
 {
     public enum AdvertStatus
     {

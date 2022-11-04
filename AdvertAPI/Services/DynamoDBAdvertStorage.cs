@@ -1,4 +1,4 @@
-﻿using AdvertApi.Models;
+﻿using NewAdvertApi.Models;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 //using Amazon.DynamoDBv2.DataModel;

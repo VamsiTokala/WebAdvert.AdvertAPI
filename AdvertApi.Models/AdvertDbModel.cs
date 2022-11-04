@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvertApi.Models
+namespace NewAdvertApi.Models
 {
     [DynamoDBTable("Adverts")] //name of the table in Dynamo DB
 

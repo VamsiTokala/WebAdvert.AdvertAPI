@@ -1,4 +1,4 @@
-﻿using AdvertApi.Models;
+﻿using NewAdvertApi.Models;
 using AutoMapper;
 namespace AdvertAPI.Services
 {

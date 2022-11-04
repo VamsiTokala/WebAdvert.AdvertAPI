@@ -1,4 +1,4 @@
-﻿using AdvertApi.Models;
+﻿using NewAdvertApi.Models;
 using AdvertAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 

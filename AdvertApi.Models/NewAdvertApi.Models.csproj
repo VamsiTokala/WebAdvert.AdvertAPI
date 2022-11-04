@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>VamsiTokala</Authors>
+    <Title>Web Advertizements Microservices</Title>
+    <PackageProjectUrl>https://github.com/VamsiTokala/WebAdvert.AdvertAPI</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/VamsiTokala/WebAdvert.AdvertAPI</RepositoryUrl>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.100.8" />
+  </ItemGroup>
+
+</Project>

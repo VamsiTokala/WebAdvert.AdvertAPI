@@ -6,7 +6,7 @@ namespace AdvertAPI.Services
     {
         Task<string> Add(AdvertModel model);
 
-        Task<bool> Confirm(ConfirmAdvertModel model);
+        Task Confirm(ConfirmAdvertModel model);
 
         /* Task ConfirmAsync(ConfirmAdvertModel model);
          Task<AdvertModel> GetByIdAsync(string id);

@@ -1,6 +1,7 @@
 ﻿using AdvertApi.Models;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
+//using Amazon.DynamoDBv2.DataModel;
 using AutoMapper;
 
 namespace AdvertAPI.Services
@@ -39,7 +40,8 @@ namespace AdvertAPI.Services
             }
         }
 
-       public async Task<bool> IAdvertStorageService.Confirm(ConfirmAdvertModel model)
+        //public async Task IAdvertStorageService.Confirm(ConfirmAdvertModel model)
+        public async Task Confirm(ConfirmAdvertModel model)
         {
             using (var client = new AmazonDynamoDBClient())
             {
@@ -66,5 +68,7 @@ namespace AdvertAPI.Services
 
             }
         }
+
+       
     }
 }

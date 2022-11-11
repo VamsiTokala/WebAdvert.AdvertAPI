@@ -1,3 +1,4 @@
+using AdvertAPI.HealthChecks;
 using AdvertAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,17 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddTransient<IAdvertStorageService,DynamoDBAdvertStorage>();
+/*builder.Services.AddHealthChecks(checks =>
+{
+    checks.AddCheck<StorageHealthCheck>("Storage", new System.TimeSpan(0,1,0)); // healthchecks get cached, giving time
+    //checks.AddCheck<StorageHealthCheck>("Storage")
+}
+
+);*/
+
+builder.Services.AddHealthChecks()
+    .AddCheck<StorageHealthCheck>("Storage");
+
 //builder.Services.AddAutoMapper();
 
 var app = builder.Build();
@@ -22,6 +34,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.MapHealthChecks("/health");
 app.UseAuthorization();
 
 app.MapControllers();

@@ -1,4 +1,4 @@
-﻿namespace AdvertAPI.Controllers
+﻿namespace NewAdvertApi.Models
 {
     public class CreateAdvertResponse
     {
